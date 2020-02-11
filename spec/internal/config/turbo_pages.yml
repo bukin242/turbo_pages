@@ -1,0 +1,9 @@
+api:
+  endpoint: 'https://api.webmaster.yandex.net/v4'
+  mode: 'DEBUG'
+  token: 'AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU'
+  user_id: 845457627
+  gzip: false
+
+hosts:
+  'Орел': 'http:orel.test-pulscen.ru:80'

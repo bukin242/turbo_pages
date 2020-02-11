@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:msk.test-pulscen.ru:80/turbo/uploadAddress?mode=DEBUG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 10:01:36 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"host_id":"http:msk.test-pulscen.ru:80","error_message":"Host not
+        verified by user","error_code":"HOST_NOT_VERIFIED"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 15:01:35 GMT
+recorded_with: VCR 5.0.0

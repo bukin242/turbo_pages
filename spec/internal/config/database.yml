@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  host: <%= ENV.fetch("TEST_DB_HOST", "localhost") %>
+  database: <%= ENV.fetch("TEST_DB_NAME", "docker") %>
+  username: <%= ENV.fetch("TEST_DB_USERNAME", "docker") %>
+  min_messages: warning

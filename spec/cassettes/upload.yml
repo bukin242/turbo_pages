@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:orel.test-pulscen.ru:80/turbo/uploadAddress?mode=DEBUG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 09:19:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Location:
+      - https://api.webmaster.yandex.net/v4/upload/turbo/XY3ZGnoF2pvHpzQnYhejP-wX5QGVwom6BPQrycDe425ONFBCjUbz3pTqHHKHajpscV7FiRFqIrRZnMIRhg_ODw==/
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"valid_until":"2019-06-04T12:29:58.690+03:00","upload_address":"https://api.webmaster.yandex.net/v4/upload/turbo/yRn2lkawehmULqn9Jo87RaJZUdUdGdovdaJP7SJl3caPo7_A5zrwYe2UK8vtIl1X6s7zTAU7H4JpbGv8Gv_pNQ==/"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 14:19:58 GMT
+- request:
+    method: post
+    uri: https://api.webmaster.yandex.net/v4/upload/turbo/yRn2lkawehmULqn9Jo87RaJZUdUdGdovdaJP7SJl3caPo7_A5zrwYe2UK8vtIl1X6s7zTAU7H4JpbGv8Gv_pNQ==/
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <rss
+          xmlns:yandex="http://news.yandex.ru"
+          xmlns:media="http://search.yahoo.com/mrss/"
+          xmlns:turbo="http://turbo.yandex.ru"
+          version="2.0">
+        <channel>
+        <item turbo="true">
+          <link>https://orel.test-pulscen.ru/products/doska_terrasnaya_listvennitsa_35_mm_kh150_kh3m_51540333</link>
+          <turbo:content>
+            <![CDATA[
+              Text
+            ]]>
+          </turbo:content>
+        </item>
+        </channel>
+        </rss>
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 09:19:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Location:
+      - https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:orel.test-pulscen.ru:80/turbo/tasks/ecb15370-86a9-11e9-b486-49e35bbfd004/
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"task_id":"ecb15370-86a9-11e9-b486-49e35bbfd004"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 14:19:58 GMT
+recorded_with: VCR 5.0.0

@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:orel.test-pulscen.ru:80/turbo/uploadAddress?mode=DEBUG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 09:35:23 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Location:
+      - https://api.webmaster.yandex.net/v4/upload/turbo/i2ryGHjlUnSJrBRlSrfUSW4VDH_ERnhHVQ98zlaEdKOqlXMEMBBpHgAWOvXWPAf4COQF5WFyHsqcXsUbnt_j4w==/
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"valid_until":"2019-06-04T12:45:23.872+03:00","upload_address":"https://api.webmaster.yandex.net/v4/upload/turbo/nsfFq523a6K_frPM1S1apzKZm5TD8ibdWS7rQ3nm7JbhRpnJMkcCp8fi02duGPWMtmvpOfcLXuGvXPWxflCC4w==/"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 14:35:23 GMT
+- request:
+    method: post
+    uri: https://api.webmaster.yandex.net/v4/upload/turbo/nsfFq523a6K_frPM1S1apzKZm5TD8ibdWS7rQ3nm7JbhRpnJMkcCp8fi02duGPWMtmvpOfcLXuGvXPWxflCC4w==/
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 09:35:24 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"error_message":"Expected valid xml, found: \"<?xml version=\"1.0\"
+        encoding=\"UTF-8\"?>\n...\"","error_code":"ENTITY_VALIDATION_ERROR"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 14:35:23 GMT
+recorded_with: VCR 5.0.0

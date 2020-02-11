@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:orel.test-pulscen.ru:80/turbo/tasks?load_status_filter=PROCESSING&mode=DEBUG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 08:10:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"tasks":[{"task_id":"1582e850-8433-11e9-b486-49e35bbfd004","created_at":"2019-06-01T09:04:15.061+03:00","load_status":"PROCESSING"}],"count":1}'
+    http_version:
+  recorded_at: Tue, 04 Jun 2019 13:10:08 GMT
+recorded_with: VCR 5.0.0

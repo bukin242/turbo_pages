@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.webmaster.yandex.net/v4/user/845457627/hosts/http:orel.test-pulscen.ru:80/turbo/uploadAddress?mode=DEBUG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/rss+xml
+      Authorization:
+      - OAuth AQAAAAAyZKjbAAUEelU5CLeOe0JAu3i-GsszWNU
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.webmaster.yandex.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 00:49:56 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Location:
+      - https://api.webmaster.yandex.net/v4/upload/turbo/J9gmTNnRY_n4Z-Ven5hy4EdoQSV9losNvMFduXhGbfLWiG06JdjfGYvhYg7yIyvGi-mSezej04CDaIvQkc3iww==/
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"valid_until":"2019-06-04T03:59:56.588+03:00","upload_address":"https://api.webmaster.yandex.net/v4/upload/turbo/J9gmTNnRY_n4Z-Ven5hy4EdoQSV9losNvMFduXhGbfLWiG06JdjfGYvhYg7yIyvGi-mSezej04CDaIvQkc3iww==/"}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 05:49:55 GMT
+recorded_with: VCR 5.0.0
